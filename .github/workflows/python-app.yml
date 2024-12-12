@@ -1,4 +1,4 @@
-name: Aplicação Python
+name: Python application
 
 on: [push, pull_request]
 
@@ -8,32 +8,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Fazer checkout do repositório
+    - name: Check out repository
       uses: actions/checkout@v2
 
-    - name: Configurar Python
+    - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
 
-    - name: Instalar dependências
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Executar testes
+    - name: Run tests
       run: |
         python -m unittest discover -s . -p "test_*.py"
 
-    - name: Empacotar projeto
-      run: |
-        mkdir -p package
-        cp calcula_imc.py package/
-        cp test_calcula_imc.py package/
-        # Adicione quaisquer outros arquivos necessários para o pacote
+    - name: Package project
+      run: zip -r imc.zip .
 
-    - name: Fazer upload do artefato
+    - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
-        name: calculadora-package
-        path: package/
+        name: imc-artifact
+        path: imc.zip
