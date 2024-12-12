@@ -24,3 +24,16 @@ jobs:
     - name: Run tests
       run: |
         python -m unittest discover -s . -p "test_*.py"
+
+    - name: Package project
+      run: |
+        mkdir -p package
+        cp calcula_imc.py package/
+        cp test_calcula_imc.py package/
+        # Add any other files needed for the package
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: calculadora-package
+        path: package/
