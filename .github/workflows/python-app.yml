@@ -33,7 +33,7 @@ jobs:
         # Add any other files needed for the package
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: calculadora-package
         path: package/
