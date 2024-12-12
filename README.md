@@ -1,7 +1,7 @@
 # Projeto de Exemplo: Calculadora em Python
 
 Este é um projeto simples de calculadora em Python usado para demonstrar como configurar CI/CD com GitHub Actions.
- 
+
 ---
 
 ## O que é o GitHub Actions?
@@ -18,7 +18,8 @@ O GitHub Actions foi lançado em outubro de 2018 pela equipe do GitHub, como par
 
 ## Vantagens e Desvantagens do GitHub Actions
 
-### **Vantagens**
+### **Vantagens**  
+
 1. **Integração Nativa com o GitHub:**
    - Totalmente integrado ao repositório, eliminando a necessidade de ferramentas externas de CI/CD.
 2. **Facilidade de Configuração:**
@@ -30,7 +31,8 @@ O GitHub Actions foi lançado em outubro de 2018 pela equipe do GitHub, como par
 5. **Marketplace de Actions:**
    - Biblioteca com milhares de actions prontas para uso.
 
-### **Desvantagens**
+### **Desvantagens**  
+
 1. **Limitações do Plano Gratuito:**
    - Em repositórios privados, o uso gratuito é limitado.
 2. **Curva de Aprendizado Inicial:**
@@ -42,8 +44,10 @@ O GitHub Actions foi lançado em outubro de 2018 pela equipe do GitHub, como par
 
 ## Suporte a Linguagens e Limitações
 
-### **Linguagens Suportadas**
+### **Linguagens Suportadas**  
+
 O GitHub Actions suporta nativamente as principais linguagens de programação, incluindo:
+
 - Python
 - JavaScript/Node.js
 - Java
