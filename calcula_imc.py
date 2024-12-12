@@ -1,7 +1,8 @@
 def calculate_bmi(weight, height):
     if height <= 0:
         return "Height must be greater than zero"
-    return weight / (height ** 2)
+    # Erro proposital: fórmula incorreta
+    return weight / height
 
 def main():
     weight = float(input("Enter your weight in kg: "))
